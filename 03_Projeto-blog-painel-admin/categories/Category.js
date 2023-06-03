@@ -12,4 +12,7 @@ const Category = connection.define('categories', {
     }
 });
 
+//Força a criação da tabela no banco de dado, uma vez criado remove
+//Category.sync({ force: true })
+
 module.exports = Category;
