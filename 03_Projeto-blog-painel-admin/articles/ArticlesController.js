@@ -52,4 +52,19 @@ router.post("/articles/delete", (req, res) => {
     }
 });
 
+router.get("/admin/articles/edit/:id", (req, res) => {
+    var id = req.params.id;
+    Article.findByPk(id).then(article => {
+        if (article != undefined) {
+            Category.findAll().then(categories => {
+                res.render("admin/articles/edit", { categories: categories });
+            });
+        } else {
+            res.redirect("/");
+        }
+    }).catch(e => {
+        res.redirect("/");
+    });
+});
+
 module.exports = router;
