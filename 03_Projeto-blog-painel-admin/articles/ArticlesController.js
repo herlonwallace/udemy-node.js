@@ -108,6 +108,7 @@ router.get("/articles/page/:num", (req, res) => {
         }
 
         var result = {
+            page: page,
             next: next,
             articles: articles
         }
