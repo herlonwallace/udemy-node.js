@@ -13,6 +13,6 @@ const User = connection.define('users', {
 });
 
 //Força a criação da tabela no banco de dado, uma vez criado remove
-User.sync({ force: true })
+//User.sync({ force: true })
 
 module.exports = User;
