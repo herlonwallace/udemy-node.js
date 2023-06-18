@@ -1,11 +1,9 @@
 // fs: File-system
 const fs = require("fs");
 
-fs.readFile("./textoParaTeste",{encoding: 'utf-8'}, (erro, dados) => {
+fs.writeFile("./textoParaTeste", "Nome: Wallace Herlon", (erro) => {
 
-    if(erro) {
-        console.log("Ocorreu uma falha durante a leitura do arquivo!")
-    } else {
-        console.log(dados);
+    if (erro) {
+        console.log("Erro durante o salvamento...");
     }
 })
