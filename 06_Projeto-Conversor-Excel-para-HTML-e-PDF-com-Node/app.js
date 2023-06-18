@@ -1,6 +1,7 @@
 const Processor = require("./Processor");
 var Reaader = require("./Reader");
 var Table = require("./Table");
+var HTMLParser = require("./HtmlParser");
 
 var leitor = new Reaader();
 
@@ -9,9 +10,11 @@ async function main(){
     var dadosProcessados = Processor.Process(dados);
 
     var usuarios = new Table(dadosProcessados);
-        
-    console.log(usuarios.RowCount);
-    console.log(usuarios.ColumnCount);
+
+    var html = await HTMLParser.Parse(usuarios);
+
+    console.log(html)
+    
 }
 
 main();
