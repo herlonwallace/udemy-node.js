@@ -1,0 +1,29 @@
+Ah, os verbos HTTP! São os métodos de requisição que podem ser utilizados para interagir com recursos 
+em um servidor. Vamos lá!
+
+GET: Solicita um recurso do servidor. Por exemplo, ao acessar uma página da web, 
+o navegador faz uma requisição GET para obter o conteúdo da página.
+
+POST: Enviar dados ao servidor e criar um novo recurso. É comumente utilizado em 
+formulários web para enviar informações que serão processadas e armazenadas.
+
+PUT: Atualiza um recurso existente no servidor. Ao fazer uma requisição PUT, 
+você envia os novos dados que serão substituídos pelos dados existentes no recurso.
+
+DELETE: Remove um recurso do servidor. Ao fazer uma requisição DELETE, você 
+solicita a exclusão do recurso especificado.
+
+PATCH: É utilizado para fazer modificações parciais em um recurso. Ao fazer uma requisição PATCH, 
+você envia apenas as alterações que deseja fazer no recurso, sem precisar enviar o recurso inteiro.
+
+HEAD: É semelhante ao GET, mas retorna apenas os cabeçalhos da resposta, sem o corpo do conteúdo. 
+É útil para obter informações sobre um recurso sem precisar baixar todo o conteúdo.
+
+OPTIONS: É utilizado para obter informações sobre as opções disponíveis para um recurso específico, 
+como os métodos de requisição suportados pelo servidor.
+
+TRACE: É utilizado para obter um loop de retorno de mensagem do servidor. É mais utilizado para 
+fins de depuração e diagnóstico.
+
+Lembre-se de que o uso adequado dos verbos HTTP depende do contexto e das especificações da API ou 
+do servidor com o qual você está interagindo.

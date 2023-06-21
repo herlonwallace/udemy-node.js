@@ -1,0 +1,31 @@
+Status mais utilizados nas respostas HTTP! Vamos lá!
+
+200 OK: Indica que a solicitação foi bem-sucedida e o 
+servidor retornou os dados solicitados com sucesso.
+
+404 Not Found: Indica que o recurso solicitado não foi 
+encontrado no servidor.
+
+500 Internal Server Error: Indica que ocorreu um erro 
+interno no servidor ao processar a solicitação. Geralmente, 
+é um erro genérico que indica que algo deu errado, mas não 
+especifica a causa exata do problema.
+
+302 Found (ou 301 Moved Permanently): Indica que o recurso 
+solicitado foi movido para uma nova localização. É comumente 
+usado para redirecionar o cliente para uma nova URL.
+
+401 Unauthorized: Indica que a solicitação requer autenticação 
+do cliente. O cliente deve fornecer credenciais válidas para 
+acessar o recurso.
+
+403 Forbidden: Indica que o servidor entendeu a solicitação, 
+mas se recusa a fornecer acesso ao recurso. Geralmente, isso 
+ocorre quando o cliente não tem permissão para acessar o recurso.
+
+400 Bad Request: Indica que a solicitação enviada pelo cliente 
+é inválida ou malformada. Pode ser devido a parâmetros ausentes, 
+incorretos ou inválidos.
+
+201 Created: Indica que a solicitação foi bem-sucedida e um novo 
+recurso foi criado no servidor.
